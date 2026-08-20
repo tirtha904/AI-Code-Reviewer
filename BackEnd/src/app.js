@@ -4,7 +4,9 @@ const cors = require('cors')
 
 const app = express()
 
-app.use(cors({origin: "https://ai-code-reviewer-wxw2.onrender.com"}))
+app.use(cors({origin: "https://ai-code-reviewer-wxw2.onrender.com",
+             credentials:true
+             }))
 
 
 app.use(express.json())
